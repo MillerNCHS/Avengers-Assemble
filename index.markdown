@@ -7,16 +7,17 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "number = int(input(&quot;Enter a number: &quot;))\n" +
-    "total = 0\n" +
-    "count = 0\n" +
-    "while number:\n" +
-    "  total += int(number)\n" +
-    "  count += 1\n" +
-    "  number = input(&quot;Enter another number (Press &#039;Enter&#039; to Stop): &quot;)\n" +
-    "average = total / count\n" +
-    "print(&quot;The total is &quot;, total)\n" +
-    "print(&quot;The average is &quot;, average)";
+  var initial = "river = &quot;Mississippi&quot;\n" +
+    "target = input(&quot;Input a character to find: &quot;)\n" +
+    "index = 0\n" +
+    "found = 0\n" +
+    "for letter in river:\n" +
+    "  if letter == target:\n" +
+    "    print(&quot;Letter found at index&quot;,index)\n" +
+    "    found = 1\n" +
+    "  index += 1\n" +
+    "if found == 0:\n" +
+    "  print(&quot;The letter&quot;,target,&quot;was not found.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
