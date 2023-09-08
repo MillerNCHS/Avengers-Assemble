@@ -7,17 +7,13 @@
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "river = &quot;Mississippi&quot;\n" +
-    "target = input(&quot;Input a character to find: &quot;)\n" +
-    "index = 0\n" +
-    "found = 0\n" +
-    "for letter in river:\n" +
-    "  if letter == target:\n" +
-    "    print(&quot;Letter found at index&quot;,index)\n" +
-    "    found = 1\n" +
-    "  index += 1\n" +
-    "if found == 0:\n" +
-    "  print(&quot;The letter&quot;,target,&quot;was not found.&quot;)";
+  var initial = "LinkedList&lt;String&gt; avengers = new LinkedList&lt;&gt;();\n" +
+    "avengers.addFirst(&quot;Tony&quot;);\n" +
+    "avengers.add(&quot;Gamora&quot;);\n" +
+    "avengers.addLast(&quot;Clint&quot;);\n" +
+    "avengers.removeFirst();\n" +
+    "avengers.add(avengers.removeFirst());\n" +
+    "System.out.println(avengers); // Print out Clint, Gamora";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
